@@ -125,7 +125,7 @@ gene_na = rowSums(is.na(edata))
 table(gene_na)
 
 # Make the distribution of NA's by samples
-sample_na = rowSums(is.na(edata))
+sample_na = colSums(is.na(edata))
 table(sample_na)
 
 ```
